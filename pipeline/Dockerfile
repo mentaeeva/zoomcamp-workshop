@@ -14,6 +14,6 @@ RUN uv sync --locked --no-install-project
 
 #copying from host machine
 
-COPY pipeline.py . 
+COPY ingest_data.py . 
 
-ENTRYPOINT [ "python", "pipeline.py"]
+ENTRYPOINT [ "python", "ingest_data.py"]
